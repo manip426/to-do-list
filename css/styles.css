@@ -1,61 +1,68 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+/*
+Colors used
+Background Color (Red): #bb1111
+Text Color (Blue): #3339db
+Button Background (Yellow): #f0ff4a
+Font: font-family: 'Quicksand', sans-serif;
+*/
+/* /////STYLES///// */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=RocknRoll+One&display=swap');
+
+:root {
+  --bgcolor: #11bbbb3f;
+  --textcolor: #9698db71;
+  --h1color: #ffffff;
+  --h5color: #000000;
+  --buttonbg: #f0ff4a7e;
+  --font: 'Quicksand', sans-serif;
+}
 
 body {
-font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #dfdfdf;
+  background-color: var(--bgcolor);
+  color: var(--h1color);
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px;
 }
 
-.container{
-padding: 20px;
-width: 300px;
-margin: 0 auto;
-margin-top: 0px;
-background: white;
-border-radius: 0 0 5px 5px;
+ul {
+  list-style: none;
 }
 
-form {
-display: inline-block;
+.list-group {
+  margin: 10px;
+  margin-top: 100px;
 }
 
-input{
-padding: 4px 15px 4px 5px;
-}
-
-#button{
-display: inline-block;
-background-color:#0d8f47;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
-}
-
-#button:hover{
-cursor: pointer;
-opacity: .8;}
-
-ol {padding-left: 20px;}
-
-ol li {padding: 5px;color:#000;}
-
-ol li:nth-child(even){background: #dfdfdf;}
-
-.strike{text-decoration: line-through;}
-
-li:hover{
+.list-group-item {
+  border: none;
+  width: 100%;
+  padding: 12px 28px;
+  font-family: inherit;
+  color: var(--textcolor);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   cursor: pointer;
- }
-
-.delete {
-	display: none;
+  background-color: var(--buttonbg);
+  border: 3px solid var(--textcolor);
+  border-color: var(--textcolor);
 }
 
-li > crossOutButton {
-	background: none;
-	border: none;
-	float: right;
-	color: #025f70;
-	font-weight: 800;
+button.btn.btn-block {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+#pokemonModal {
+  color: var(--h5color);
 }
